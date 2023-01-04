@@ -43,3 +43,30 @@ function scroll() {
             break;
         }
 }
+
+window.onmousemove = function (event) {
+    if (event.clientY < 100) {
+        document.getElementsByClassName("header")[0].style.top = "0px"
+    }
+    else {
+        document.getElementsByClassName("header")[0].style.top = "-101px"
+    }
+};
+
+
+
+window.setInterval(picTimer, 5000);
+
+function picTimer() {
+    imageNum += 1;
+    if (imageNum > 4) {
+        imageNum = 1;
+        
+    }
+    else {
+        console.log(imageNum);
+    }
+    scroll();
+};
+
+
