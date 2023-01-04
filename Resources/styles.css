@@ -11,7 +11,12 @@
   flex-direction: row;
   z-index: 1000;
   border-bottom:  1px solid black;
-	background-color: white;
+	background: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.active{
+    background-color: grey;
 }
 
 
@@ -65,11 +70,56 @@
   background-size:cover;
   width: 100%;
   height: 1000px;
-  display: grid;
-  grid-template-rows: 100px 300px 400px 200px;
-  grid-template-columns: 60% 40%;
+  display: inline-flex;
+  flex-direction: row;
+  
+  
+  
+
 }
 
+.pic-back {
+    height: 100%;
+    width: 7%;
+    margin-right: auto;
+    transition: all .3s ease-in;
+    display: flex;
+}
+
+.pic-back img {
+    max-width: 37px;
+    margin: auto;
+
+}
+.pic-back:hover {
+    background-color: rgb(20,20,20,0.3);
+    cursor: pointer;
+}
+
+.pic-forward {
+    height: 100%;
+    width: 7%;
+    margin-left: auto;
+    transition: all .3s ease-in;
+    display: flex;
+}
+
+.pic-forward img{
+    max-width:37px;
+    margin:auto;
+
+}
+
+.pic-forward:hover {
+    background-color: rgb(20,20,20,0.3);
+    cursor: pointer;
+}
+
+.main-title{
+    height: 100%;
+    width: 86%;
+
+}
 
 
 .landing{
@@ -78,16 +128,15 @@
 }
 
 #welcome{
-  grid-area: 2 / 1 / span 1 / span 1;
-  margin: 240px 9%;
+ 
+  margin: 100px 9%;
   color: white;
   font-size: 60px;
 }
 
 #falls{
-  grid-area: 3 / 1 / span 1 / span 1;
-  display: flex;
-  margin: 10px 15%;
+ 
+  margin: 10px 10%;
   color: white;
   font-size: 130px;
 }
