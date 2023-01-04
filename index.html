@@ -10,36 +10,43 @@
   </head>
   <body>
 
+      <nav class="dropdown">
+          <ul class="drop-list">
+              <a href="#"><li>Home</li></a>
+              <a href="the-fam.html"><li>The Fam</li></a>
+              <a href=""><li>Photos</li></a>
+              <a href="#"><li>Contact</li></a>
+          </ul>
+      </nav>
+
       <div class="header">
           <a href="#"><div class="logo"><img src="./resources/images/logo.svg"></div></a>
           <nav class="nav">
               <ul class="nav-list">
-                  <a href="#">
-                  <li>Home</li></a>
-                  <a href="#">
-                  <li>The Fam</li></a>
-                  <a href="#">
-                  <li>Photos</li></a>
-                  <a href="#">
-                  <li>Contact</li></a>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="the-fam.html">The Fam</a></li>
+                  <li><a href="photos.html">Photos</a></li>
+                  <li><a href="contact.html">Contact</a></li>
               </ul>
           </nav>
+
+
       </div>
 
       <div class="main">
-          <div class="pic-back"><img src="./resources/images/left.svg"></div>
+          <div class="pic-back" onclick="leftScroll()"><img src="./resources/images/left.svg"></div>
 
           <div class="main=title">
               <h1 id="welcome"> Welcome to</h1>
               <h1 id="falls"> The Falls</h1>
           </div>
-          <div class="pic-forward"><img src="./resources/images/right.svg"></div>
+          <div class="pic-forward" onclick="rightScroll()"><img src="./resources/images/right.svg"></div>
 
 
       </div>
 
-      <div class="landing">
-
+      <div class="footer">
+          <h3>by Andrew Weikkola</h3>
       </div>
 
 
